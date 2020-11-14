@@ -36,13 +36,13 @@
     <section class="hero">
         <div class="banner">
             <h1 class="banner-title">Эффективные решения<br>для вашего бизнеса</h1>
-            <button type="button" class="banner-button">Заказать услугу</button>
+            <button type="button" class="banner-button data-modal-open">Заказать услугу</button>
         </div>
     </section>
     <section class="values-section">
         <div class="container"> 
             <h2 class="section-title hide visually-hidden">Наши ценности</h2>
-            <!--потом этот заголовок будет скрыт-->
+            <!--этот заголовок скрыт-->
             <ul class="values">
                 <li class="values-item">
                     <div class="values-img">
@@ -87,9 +87,24 @@
        <div class="container">
             <h2 class="section-title">Чем мы занимаемся</h2>
             <ul class="examples">
-                <li><img src="./image/img_1.jpg" alt="Компьютерное приложение" width="370" height="294"></li>
-                <li><img src="./image/img_2.jpg" alt="Приложение для смартфона" width="370" height="294"></li>
-                <li><img src="./image/img_3.jpg" alt="Приложение для планшета" width="370" height="294"></li>
+                <li class="example-img">
+                    <img src="./image/img_1.jpg" alt="Компьютерное приложение" width="370" height="294">
+                    <div class="example-overlay">
+                        <p class="example-title">Десктопные приложения</p>
+                    </div>
+                </li>
+                <li class="example-img">
+                    <img src="./image/img_2.jpg" alt="Приложение для смартфона" width="370" height="294">
+                    <div class="example-overlay">
+                        <p class="example-title">Мобильные приложения</p>
+                    </div>
+                </li>
+                <li class="example-img">
+                    <img src="./image/img_3.jpg" alt="Приложение для планшета" width="370" height="294">
+                    <div class="example-overlay">
+                        <p class="example-title">Дизайнерские решения</p>
+                    </div>
+                </li>
             </ul>
        </div>
     </section>
@@ -336,5 +351,14 @@
          </div>
         </div>
     </footer>
+    <div class="backdrop data-modal">
+        <div class="modal">
+            <button type="button" class="close-button data-modal-close">
+                <svg class="close-icon">
+                    <use href="./image/sprite.svg#icon-crossclose"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
 </body>
 </html>
